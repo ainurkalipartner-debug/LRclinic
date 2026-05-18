@@ -225,14 +225,24 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
   z-index: 3;
   display: inline-flex;
   align-items: center;
+  padding: 2px 0;
 }
 .nav-logo img {
-  height: 28px;
+  height: 38px;
   width: auto;
   object-fit: contain;
-  transition: transform .4s var(--ease);
+  /* Drop the logo's white background so it blends with the cream nav */
+  mix-blend-mode: multiply;
+  /* Smooth scaling on high-DPI displays */
+  image-rendering: -webkit-optimize-contrast;
+  transition: transform .4s var(--ease), opacity .25s var(--ease);
+  will-change: transform;
 }
-.nav-logo:hover img { transform: scale(1.04); opacity: 1; }
+.nav-logo:hover img {
+  transform: scale(1.04);
+  opacity: 1;
+}
+.nav-logo:active img { transform: scale(0.98); }
 .nav-links {
   display: flex;
   gap: 36px;
@@ -1463,8 +1473,8 @@ body.is-menu-open .wa-fab {
   .section-head .eyebrow::after { display: none; }
 
   /* Nav — compact top bar */
-  .nav-inner { height: 66px; }
-  .nav-logo img { height: 24px; }
+  .nav-inner { height: 68px; }
+  .nav-logo img { height: 30px; }
   .nav-actions { gap: 8px; }
   .lang-toggle {
     padding: 5px 8px;
