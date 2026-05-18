@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,11 +28,12 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#about" data-i18n="nav.about">О клинике</a>
-        <a href="#services" data-i18n="nav.services">Услуги</a>
-        <a href="#team" data-i18n="nav.team">Команда</a>
-        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
-        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+        <a href="#about" data-i18n="nav.about">о клинике</a>
+        <a href="#services" data-i18n="nav.services">услуги</a>
+        <a href="#team" data-i18n="nav.team">команда</a>
+        <a href="#reviews" data-i18n="nav.reviews">отзывы</a>
+        <a href="#faq" data-i18n="nav.faq">вопросы</a>
+        <a href="#contact" data-i18n="nav.contact">контакты</a>
         <div class="nav-mobile-footer">
           <a href="https://wa.me/77781703160" target="_blank" rel="noopener" class="btn btn-primary nav-mobile-cta" data-i18n="nav.cta">Записаться</a>
           <div class="nav-mobile-contact">
@@ -60,12 +61,12 @@
   <section id="hero" class="hero">
     <div class="container hero-inner">
       <div class="hero-copy reveal">
-        <span class="eyebrow" data-i18n="hero.eyebrow">Стоматология премиум-класса · Астана</span>
+        <span class="eyebrow" data-i18n="hero.eyebrow">бережная стоматология · астана</span>
         <h1 class="display">
-          <span data-i18n="hero.title1">LR Clinic</span>
-          <span class="display-light" data-i18n="hero.title2">Dentistry & Aligners</span>
+          <span data-i18n="hero.title1">caring for your smile,</span>
+          <span class="display-light" data-i18n="hero.title2">caring for you.</span>
         </h1>
-        <p class="lede" data-i18n="hero.subtitle">Мы улучшаем вашу улыбку и качество жизни.</p>
+        <p class="lede" data-i18n="hero.subtitle">современная стоматология с тёплым человеческим подходом — там, где о вас заботятся, а не просто лечат.</p>
         <div class="hero-cta">
           <a href="https://wa.me/77781703160?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.cta1">Записаться на консультацию</a>
           <a href="#about" class="btn btn-ghost" data-i18n="hero.cta2">Узнать больше</a>
@@ -269,6 +270,134 @@
             <p class="team-bio" data-i18n="team.m3.bio">Лечение под микроскопом и бережная работа с детьми.</p>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS / CLINIC TODAY ============ -->
+  <section class="section section-stats">
+    <div class="container">
+      <div class="stats-head reveal">
+        <span class="eyebrow" data-i18n="stats.eyebrow">клиника сегодня</span>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-row reveal">
+          <div class="stat-num">2019</div>
+          <div class="stat-label" data-i18n="stats.s1">год открытия клиники в астане</div>
+        </div>
+        <div class="stat-row reveal">
+          <div class="stat-num">5 000+</div>
+          <div class="stat-label" data-i18n="stats.s2">довольных пациентов</div>
+        </div>
+        <div class="stat-row reveal">
+          <div class="stat-num">1 200+</div>
+          <div class="stat-label" data-i18n="stats.s3">установленных имплантов</div>
+        </div>
+        <div class="stat-row reveal">
+          <div class="stat-num">3 500+</div>
+          <div class="stat-label" data-i18n="stats.s4">сохранённых зубов</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="reviews" class="section section-reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="reviews.eyebrow">отзывы пациентов</span>
+        <h2 class="h2" data-i18n="reviews.title">слова, которые мы получаем чаще всего</h2>
+        <p class="section-sub" data-i18n="reviews.sub">реальные истории людей, которые доверили нам свои улыбки.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card reveal">
+          <div class="review-stars" aria-label="5 из 5">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="review-text" data-i18n="reviews.r1.text">«Прекрасная клиника! Лаура Роллановна сделала реставрацию переднего зуба — отличить невозможно. Очень внимательное отношение и спокойная атмосфера.»</p>
+          <div class="review-meta">
+            <div class="review-avatar">А</div>
+            <div>
+              <div class="review-name" data-i18n="reviews.r1.name">Алина М.</div>
+              <div class="review-date" data-i18n="reviews.r1.date">2GIS · 2025</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-stars" aria-label="5 из 5">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="review-text" data-i18n="reviews.r2.text">«Делала имплантацию у Айжан Аслановны. Всё прошло безболезненно, врач спокойно объясняла каждый шаг. Через 4 месяца поставили коронку — выглядит идеально.»</p>
+          <div class="review-meta">
+            <div class="review-avatar">А</div>
+            <div>
+              <div class="review-name" data-i18n="reviews.r2.name">Айгерим К.</div>
+              <div class="review-date" data-i18n="reviews.r2.date">2GIS · 2025</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-stars" aria-label="5 из 5">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="review-text" data-i18n="reviews.r3.text">«Боюсь стоматологов с детства, но здесь чувствую себя спокойно. Амина Талгатқызы работает под микроскопом — очень аккуратно и без боли. Искренне рекомендую.»</p>
+          <div class="review-meta">
+            <div class="review-avatar">Д</div>
+            <div>
+              <div class="review-name" data-i18n="reviews.r3.name">Дина Р.</div>
+              <div class="review-date" data-i18n="reviews.r3.date">2GIS · 2024</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-stars" aria-label="5 из 5">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="review-text" data-i18n="reviews.r4.text">«Привожу всю семью. Дочка перестала бояться стоматолога. Чисто, уютно, врачи внимательные. Отдельно отмечу стерильность — все упаковки вскрывают при тебе.»</p>
+          <div class="review-meta">
+            <div class="review-avatar">С</div>
+            <div>
+              <div class="review-name" data-i18n="reviews.r4.name">Сергей В.</div>
+              <div class="review-date" data-i18n="reviews.r4.date">2GIS · 2024</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-stars" aria-label="5 из 5">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="review-text" data-i18n="reviews.r5.text">«Лечила глубокий кариес. Врач объяснила, что нерв удалять не нужно — сохранили зуб. Прошёл почти год, ничего не беспокоит. Спасибо за профессионализм.»</p>
+          <div class="review-meta">
+            <div class="review-avatar">Ж</div>
+            <div>
+              <div class="review-name" data-i18n="reviews.r5.name">Жанар Н.</div>
+              <div class="review-date" data-i18n="reviews.r5.date">2GIS · 2024</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-stars" aria-label="5 из 5">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="review-text" data-i18n="reviews.r6.text">«Чистка и отбеливание — результат превзошёл ожидания. Девочки на ресепшене очень милые, записаться легко через WhatsApp. Однозначно возвращаемся.»</p>
+          <div class="review-meta">
+            <div class="review-avatar">Э</div>
+            <div>
+              <div class="review-name" data-i18n="reviews.r6.name">Эльвира А.</div>
+              <div class="review-date" data-i18n="reviews.r6.date">2GIS · 2024</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="reviews-cta reveal">
+        <a href="https://2gis.kz/astana/firm/70000001102011303/tab/reviews" target="_blank" rel="noopener" class="reviews-link" data-i18n="reviews.cta">читать все отзывы на 2gis →</a>
       </div>
     </div>
   </section>
