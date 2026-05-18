@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#FAFAF7" />
+  <meta name="description" data-i18n="meta.description" content="LR Clinic — стоматология и элайнеры в Астане. Премиальный уход, современные технологии, опытные врачи." />
+  <meta name="keywords" content="стоматология Астана, элайнеры, имплантация, виниры, LR Clinic, стоматолог Астана" />
+  <meta property="og:title" content="LR Clinic — Dentistry & Aligners" />
+  <meta property="og:description" content="Мы не просто лечим зубы — мы улучшаем качество жизни." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <title>LR Clinic — Dentistry & Aligners</title>
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo" aria-label="LR Clinic">
+        <img src="assets/logo.png" alt="LR Clinic" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">О клинике</a>
+        <a href="#services" data-i18n="nav.services">Услуги</a>
+        <a href="#team" data-i18n="nav.team">Команда</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="tablist" aria-label="Language">
+          <button role="tab" data-lang="ru" class="lang-btn is-active" aria-selected="true">RU</button>
+          <span class="lang-sep">/</span>
+          <button role="tab" data-lang="kz" class="lang-btn" aria-selected="false">KZ</button>
+        </div>
+        <a href="https://wa.me/77781703160" target="_blank" rel="noopener" class="btn btn-primary nav-cta" data-i18n="nav.cta">Записаться</a>
+        <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-i18n="hero.eyebrow">Стоматология премиум-класса · Астана</span>
+        <h1 class="display">
+          <span data-i18n="hero.title1">LR Clinic</span>
+          <span class="display-light" data-i18n="hero.title2">Dentistry & Aligners</span>
+        </h1>
+        <p class="lede" data-i18n="hero.subtitle">Мы улучшаем вашу улыбку и качество жизни.</p>
+        <div class="hero-cta">
+          <a href="https://wa.me/77781703160?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.cta1">Записаться на консультацию</a>
+          <a href="#about" class="btn btn-ghost" data-i18n="hero.cta2">Узнать больше</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <strong>10+</strong>
+            <span data-i18n="hero.meta1">лет опыта</span>
+          </div>
+          <div class="hero-meta-item">
+            <strong>100%</strong>
+            <span data-i18n="hero.meta2">стерильность</span>
+          </div>
+          <div class="hero-meta-item">
+            <strong>3</strong>
+            <span data-i18n="hero.meta3">профильных врача</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <div class="hero-card-shine"></div>
+          <svg class="hero-illust" viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#F4F1EC"/>
+                <stop offset="100%" stop-color="#E8E2D8"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FFFFFF"/>
+                <stop offset="100%" stop-color="#F8F6F1"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="480" rx="28" fill="url(#g1)"/>
+            <!-- abstract tooth -->
+            <path d="M200 110 C150 110 120 150 122 200 C124 250 138 290 150 340 C158 370 172 380 185 360 C193 340 190 310 200 310 C210 310 207 340 215 360 C228 380 242 370 250 340 C262 290 276 250 278 200 C280 150 250 110 200 110 Z"
+                  fill="url(#g2)" stroke="#D9D2C5" stroke-width="2"/>
+            <circle cx="320" cy="120" r="40" fill="#FFFFFF" opacity="0.7"/>
+            <circle cx="70" cy="380" r="60" fill="#FFFFFF" opacity="0.5"/>
+            <circle cx="340" cy="380" r="14" fill="#B5A89A"/>
+            <circle cx="60" cy="120" r="8" fill="#6B8AA8" opacity="0.4"/>
+          </svg>
+          <div class="hero-card-badge">
+            <span class="dot"></span>
+            <span data-i18n="hero.badge">Запись открыта</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span data-i18n="hero.scroll">Прокрутите вниз</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section section-about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">О клинике</span>
+          <h2 class="h2" data-i18n="about.title">Мы не просто лечим зубы — мы улучшаем качество жизни.</h2>
+        </div>
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">Наша команда сочетает клиническую экспертизу, современные технологии и высокие стандарты заботы в каждой детали приёма.</p>
+          <p data-i18n="about.p2">Мы создали LR Clinic для тех, кто ценит точность, спокойствие и долгосрочный результат — где медицинская строгость встречается с тёплым человеческим подходом.</p>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-num">01</div>
+              <div>
+                <h4 data-i18n="about.v1t">Точность</h4>
+                <p data-i18n="about.v1d">Цифровая диагностика и предсказуемые протоколы лечения.</p>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-num">02</div>
+              <div>
+                <h4 data-i18n="about.v2t">Спокойствие</h4>
+                <p data-i18n="about.v2d">Атмосфера, в которой не страшно, не больно, не тревожно.</p>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-num">03</div>
+              <div>
+                <h4 data-i18n="about.v3t">Долговечность</h4>
+                <p data-i18n="about.v3d">Работаем на годы вперёд — с акцентом на профилактику.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section section-services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">Услуги</span>
+        <h2 class="h2" data-i18n="services.title">Полный спектр стоматологической помощи</h2>
+        <p class="section-sub" data-i18n="services.sub">От профилактики до сложной имплантологии — в одном пространстве, под наблюдением профильных специалистов.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 6 C10 6 7 10 7 16 C7 22 10 28 13 28 C15 28 15 24 16 24 C17 24 17 28 19 28 C22 28 25 22 25 16 C25 10 22 6 16 6 Z"/></svg>
+          </div>
+          <h3 data-i18n="s.therapy.t">Терапия</h3>
+          <p data-i18n="s.therapy.d">Лечение дёсен и кариеса любой сложности с использованием микроскопа.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16 L11 10 L21 20 L27 14"/><circle cx="5" cy="16" r="2"/><circle cx="27" cy="14" r="2"/></svg>
+          </div>
+          <h3 data-i18n="s.aesth.t">Эстетические реставрации</h3>
+          <p data-i18n="s.aesth.d">Композитные реставрации, виниры и люминиры — естественная белизна и форма.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="12" height="14" rx="2"/><path d="M16 20 L16 26 M12 26 L20 26"/></svg>
+          </div>
+          <h3 data-i18n="s.surg.t">Хирургия и имплантология</h3>
+          <p data-i18n="s.surg.d">Удаление зубов, имплантация, лечение рецессии дёсен, пластика уздечки.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 L16 22 M12 8 L16 4 L20 8 M10 22 C10 26 13 28 16 28 C19 28 22 26 22 22"/></svg>
+          </div>
+          <h3 data-i18n="s.endo.t">Эндодонтия</h3>
+          <p data-i18n="s.endo.d">Лечение каналов, терапия пульпы, сохранение собственного зуба.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="20" height="14" rx="2"/><path d="M10 10 L10 6 M22 10 L22 6 M6 16 L26 16"/></svg>
+          </div>
+          <h3 data-i18n="s.ortho.t">Ортопедия</h3>
+          <p data-i18n="s.ortho.d">Коронки, виниры, вкладки, мостовидные протезы — индивидуальная работа.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 C20 10 24 14 24 20 C24 24 20 28 16 28 C12 28 8 24 8 20 C8 14 12 10 16 4 Z"/></svg>
+          </div>
+          <h3 data-i18n="s.hyg.t">Гигиена и профилактика</h3>
+          <p data-i18n="s.hyg.d">Профессиональная чистка, отбеливание — кабинетное, домашнее, лазерное.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section id="team" class="section section-team">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="team.eyebrow">Команда</span>
+        <h2 class="h2" data-i18n="team.title">Врачи, которым доверяют</h2>
+        <p class="section-sub" data-i18n="team.sub">Каждый специалист LR Clinic — это многолетняя практика, постоянное обучение и любовь к делу.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="team-photo">
+            <img src="assets/laura.png" alt="Усманова Лаура Роллановна" loading="lazy" />
+            <div class="team-photo-overlay"></div>
+          </div>
+          <div class="team-info">
+            <h3 data-i18n="team.m1.name">Усманова Лаура Роллановна</h3>
+            <p class="team-role" data-i18n="team.m1.role">Главный врач</p>
+            <p class="team-bio" data-i18n="team.m1.bio">Руководит клинической работой и стандартами качества LR Clinic.</p>
+          </div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="team-photo">
+            <img src="assets/aizhan.png" alt="Каржас Айжан Аслановна" loading="lazy" />
+            <div class="team-photo-overlay"></div>
+          </div>
+          <div class="team-info">
+            <h3 data-i18n="team.m2.name">Каржас Айжан Аслановна</h3>
+            <p class="team-role" data-i18n="team.m2.role">Хирург · Ортопед · Имплантолог</p>
+            <p class="team-bio" data-i18n="team.m2.bio">Имплантация, протезирование и сложные хирургические случаи.</p>
+          </div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="team-photo">
+            <img src="assets/amina.png" alt="Тілеуқұл Әмина Талғатқызы" loading="lazy" />
+            <div class="team-photo-overlay"></div>
+          </div>
+          <div class="team-info">
+            <h3 data-i18n="team.m3.name">Тілеуқұл Әмина Талғатқызы</h3>
+            <p class="team-role" data-i18n="team.m3.role">Терапевт · Эндодонтист · Микроскопист · Детский стоматолог</p>
+            <p class="team-bio" data-i18n="team.m3.bio">Лечение под микроскопом и бережная работа с детьми.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST / PSYCHOLOGY ============ -->
+  <section class="section section-trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="trust.eyebrow">Доверие и комфорт</span>
+          <h2 class="h2" data-i18n="trust.title">Почему пациенты боятся стоматологов — и как мы это меняем</h2>
+          <p class="trust-lede" data-i18n="trust.lede">Мы понимаем тревогу пациентов и выстраиваем приём так, чтобы её не было.</p>
+        </div>
+
+        <div class="trust-stats reveal">
+          <div class="trust-stat">
+            <div class="trust-bar"><div class="trust-bar-fill" data-fill="38"></div></div>
+            <div class="trust-stat-row">
+              <span class="trust-stat-num">38%</span>
+              <span class="trust-stat-label" data-i18n="trust.f1">Страх боли</span>
+            </div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-bar"><div class="trust-bar-fill" data-fill="33"></div></div>
+            <div class="trust-stat-row">
+              <span class="trust-stat-num">33%</span>
+              <span class="trust-stat-label" data-i18n="trust.f2">Страх из детства</span>
+            </div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-bar"><div class="trust-bar-fill" data-fill="29"></div></div>
+            <div class="trust-stat-row">
+              <span class="trust-stat-num">29%</span>
+              <span class="trust-stat-label" data-i18n="trust.f3">Стоимость лечения</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-points">
+        <div class="trust-point reveal">
+          <h4 data-i18n="trust.p1t">Местная анестезия</h4>
+          <p data-i18n="trust.p1d">Современные препараты — лечение проходит без боли.</p>
+        </div>
+        <div class="trust-point reveal">
+          <h4 data-i18n="trust.p2t">Бережные техники</h4>
+          <p data-i18n="trust.p2d">Минимально-инвазивные подходы и работа под микроскопом.</p>
+        </div>
+        <div class="trust-point reveal">
+          <h4 data-i18n="trust.p3t">Опытные врачи</h4>
+          <p data-i18n="trust.p3d">Команда, которая объясняет каждый шаг лечения.</p>
+        </div>
+      </div>
+
+      <p class="trust-message reveal" data-i18n="trust.msg">В LR Clinic мы обеспечиваем спокойствие и комфорт.</p>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATIONAL ============ -->
+  <section class="section section-edu">
+    <div class="container">
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="eyebrow" data-i18n="edu.eyebrow1">Почему важен рентген</span>
+          <h3 data-i18n="edu.title1">Снимок — это диагноз, а не формальность</h3>
+          <p data-i18n="edu.p1">Рентген позволяет увидеть кариес между зубами, состояние корней и костной ткани. Без него лечение — это работа вслепую.</p>
+        </div>
+
+        <div class="edu-card edu-card-dark reveal">
+          <span class="eyebrow" data-i18n="edu.eyebrow2">Чем опасна отсрочка</span>
+          <h3 data-i18n="edu.title2">Что происходит, если откладывать</h3>
+          <ol class="edu-flow">
+            <li><span class="edu-step">01</span><span data-i18n="edu.f1">Кариес</span></li>
+            <li><span class="edu-step">02</span><span data-i18n="edu.f2">Поражение нерва</span></li>
+            <li><span class="edu-step">03</span><span data-i18n="edu.f3">Удаление</span></li>
+            <li><span class="edu-step">04</span><span data-i18n="edu.f4">Имплант</span></li>
+          </ol>
+          <p data-i18n="edu.p2">Чем раньше — тем меньше времени, средств и переживаний.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORAL CARE ============ -->
+  <section class="section section-care">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="care.eyebrow">Уход за полостью рта</span>
+        <h2 class="h2" data-i18n="care.title">Ваш ежедневный ритуал</h2>
+        <p class="section-sub" data-i18n="care.sub">Простая последовательность, которая сохраняет результат лечения на годы.</p>
+      </div>
+
+      <div class="care-grid">
+        <div class="care-block reveal">
+          <div class="care-head">
+            <span class="care-time" data-i18n="care.morning">Утро</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </div>
+          <ul class="care-list">
+            <li data-i18n="care.m1">Мягкая щётка и паста с фтором</li>
+            <li data-i18n="care.m2">Ирригатор</li>
+            <li data-i18n="care.m3">Ополаскиватель</li>
+          </ul>
+        </div>
+
+        <div class="care-block reveal">
+          <div class="care-head">
+            <span class="care-time" data-i18n="care.evening">Вечер</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </div>
+          <ul class="care-list">
+            <li data-i18n="care.e1">Тщательная чистка</li>
+            <li data-i18n="care.e2">Зубная нить</li>
+            <li data-i18n="care.e3">После чистки — не есть</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section section-faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Вопросы и ответы</span>
+        <h2 class="h2" data-i18n="faq.title">Часто задаваемые вопросы</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>
+            <span data-i18n="faq.q1">Почему зуб может болеть после лечения?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <p data-i18n="faq.a1">Это естественная реакция тканей на вмешательство — обычно проходит за 2–5 дней. Если боль усиливается, обязательно свяжитесь с нами.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span data-i18n="faq.q2">Нужно ли лечить зуб, если он не болит?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <p data-i18n="faq.a2">Да. Кариес и воспаление развиваются без боли месяцами. Раннее лечение — это сохранение зуба и значительно меньшие затраты.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span data-i18n="faq.q3">В чём разница между кариесом и пульпитом?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <p data-i18n="faq.a3">Кариес — это разрушение твёрдых тканей зуба. Пульпит — воспаление нерва, как правило, следствие нелеченого кариеса.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span data-i18n="faq.q4">Почему перед лечением делают рентген?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <p data-i18n="faq.a4">Чтобы увидеть скрытые поражения, оценить корни и костную ткань. Без снимка диагноз будет неполным.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAMILY ============ -->
+  <section class="section section-family">
+    <div class="container">
+      <div class="family-card reveal">
+        <div>
+          <span class="eyebrow" data-i18n="family.eyebrow">Семейная стоматология</span>
+          <h2 class="h2" data-i18n="family.title">Семьи выбирают LR Clinic</h2>
+          <p data-i18n="family.p">Потому что мы делаем акцент на профилактике — а не только на лечении. Это значит меньше визитов «по боли» и больше уверенности в здоровье ваших близких.</p>
+        </div>
+        <div class="family-cta">
+          <a href="https://wa.me/77781703160?text=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B5%D0%BC%D1%8C%D0%B8" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="family.cta">Записаться семьёй</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STERILIZATION ============ -->
+  <section class="section section-steril">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="steril.eyebrow">Стерилизация и безопасность</span>
+        <h2 class="h2" data-i18n="steril.title">Безопасность — без компромиссов</h2>
+      </div>
+
+      <div class="steril-grid">
+        <div class="steril-card reveal">
+          <div class="steril-num">100%</div>
+          <h4 data-i18n="steril.t1">Протоколы стерилизации</h4>
+          <p data-i18n="steril.d1">Полный цикл обработки в соответствии с международными стандартами.</p>
+        </div>
+        <div class="steril-card reveal">
+          <div class="steril-num">01</div>
+          <h4 data-i18n="steril.t2">Одноразовые материалы</h4>
+          <p data-i18n="steril.d2">Расходные материалы — индивидуальные, упаковка вскрывается при пациенте.</p>
+        </div>
+        <div class="steril-card reveal">
+          <div class="steril-num">03</div>
+          <h4 data-i18n="steril.t3">Многоэтапная обработка</h4>
+          <p data-i18n="steril.d3">Дезинфекция, ультразвук, автоклавирование — для каждого инструмента.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo-wrap" aria-label="LR Clinic">
+          <img src="assets/logo.png" alt="LR Clinic" class="footer-logo" />
+        </a>
+        <p class="footer-tag" data-i18n="footer.tag">Мы не просто лечим зубы — мы улучшаем качество жизни.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.h1">Контакты</h5>
+        <a href="https://wa.me/77781703160" target="_blank" rel="noopener">WhatsApp: +7 778 170 3160</a>
+        <a href="https://2gis.kz/astana/firm/70000001102011303" target="_blank" rel="noopener" data-i18n="footer.addr">Астана, ул. Аскара Токпанова 8/5</a>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.h2">Соцсети</h5>
+        <a href="https://www.instagram.com/lrclinic_astana?igsh=MWM4d21yMXBmd3N4NQ%3D%3D" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.threads.com/@lrclinic_astana?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank" rel="noopener">Threads</a>
+        <a href="https://2gis.kz/astana/firm/70000001102011303" target="_blank" rel="noopener">2GIS</a>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.h3">Часы приёма</h5>
+        <span data-i18n="footer.hrs1">Пн–Сб: 09:00 — 20:00</span>
+        <span data-i18n="footer.hrs2">Вс: по записи</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span>© <span id="year">2026</span> LR Clinic. <span data-i18n="footer.rights">Все права защищены.</span></span>
+      <span data-i18n="footer.made">Astana · Kazakhstan</span>
+    </div>
+  </footer>
+
+  <!-- ============ STICKY WHATSAPP ============ -->
+  <a href="https://wa.me/77781703160" target="_blank" rel="noopener" class="wa-fab" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16.001 3C8.82 3 3 8.82 3 16c0 2.29.6 4.53 1.74 6.5L3 29l6.69-1.71A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16.001 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.47l-.39-.23l-3.97 1.01l1.04-3.87l-.25-.4A10.6 10.6 0 0 1 5.4 16C5.4 10.15 10.15 5.4 16 5.4S26.6 10.15 26.6 16S21.85 26.6 16 26.6zm6.05-7.99c-.33-.17-1.95-.96-2.25-1.07c-.3-.11-.52-.17-.74.17c-.22.33-.85 1.07-1.04 1.29c-.19.22-.39.25-.72.08c-.33-.17-1.39-.51-2.65-1.64c-.98-.87-1.64-1.95-1.83-2.28c-.19-.33-.02-.51.15-.68c.16-.16.33-.41.5-.61c.17-.2.22-.33.33-.55c.11-.22.05-.41-.03-.58c-.08-.17-.74-1.78-1.01-2.44c-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.58.08-.88.41c-.3.33-1.15 1.12-1.15 2.73c0 1.61 1.18 3.17 1.35 3.39c.17.22 2.33 3.56 5.65 4.99c.79.34 1.41.54 1.89.69c.79.25 1.51.22 2.08.13c.63-.09 1.95-.8 2.22-1.57c.27-.77.27-1.43.19-1.57c-.08-.13-.3-.22-.63-.39z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
