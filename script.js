@@ -331,18 +331,34 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  burger?.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('is-open');
+  const setMenu = (open) => {
+    navLinks.classList.toggle('is-open', open);
     burger.classList.toggle('is-open', open);
     burger.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('is-menu-open', open);
+  };
+
+  burger?.addEventListener('click', () => {
+    const open = !navLinks.classList.contains('is-open');
+    setMenu(open);
   });
 
   navLinks?.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('is-open');
-      burger?.classList.remove('is-open');
-      burger?.setAttribute('aria-expanded', 'false');
-    });
+    a.addEventListener('click', () => setMenu(false));
+  });
+
+  // Close menu when resizing to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 960 && navLinks.classList.contains('is-open')) {
+      setMenu(false);
+    }
+  });
+
+  // Close menu on Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+      setMenu(false);
+    }
   });
 
   /* ---------------- REVEAL ON SCROLL ---------------- */
