@@ -454,44 +454,12 @@
 
   /* ---------------- NAV ---------------- */
   const nav = document.getElementById('nav');
-  const burger = document.querySelector('.nav-burger');
-  const navLinks = document.querySelector('.nav-links');
 
   const onScroll = () => {
     nav.classList.toggle('is-scrolled', window.scrollY > 12);
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
-
-  const setMenu = (open) => {
-    navLinks.classList.toggle('is-open', open);
-    burger.classList.toggle('is-open', open);
-    burger.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('is-menu-open', open);
-  };
-
-  burger?.addEventListener('click', () => {
-    const open = !navLinks.classList.contains('is-open');
-    setMenu(open);
-  });
-
-  navLinks?.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => setMenu(false));
-  });
-
-  // Close menu when resizing to desktop
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 960 && navLinks.classList.contains('is-open')) {
-      setMenu(false);
-    }
-  });
-
-  // Close menu on Esc
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
-      setMenu(false);
-    }
-  });
 
   /* ---------------- REVEAL ON SCROLL ---------------- */
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
