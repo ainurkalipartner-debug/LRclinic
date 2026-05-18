@@ -1243,26 +1243,30 @@ body.is-menu-open .wa-fab {
 }
 .footer-logo-wrap {
   display: inline-block;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   padding: 0;
   background: none;
   border: 0;
   box-shadow: none;
   border-radius: 0;
   line-height: 0;
-  transition: opacity .3s var(--ease), transform .4s var(--ease);
+  transition: opacity .3s var(--ease);
 }
-.footer-logo-wrap:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
-}
+.footer-logo-wrap:hover { opacity: 0.78; }
 .footer-logo {
-  height: 56px;
+  height: 60px;
   width: auto;
   display: block;
-  /* Brighten the taupe logo to a warm cream that pops against the dark footer */
-  filter: brightness(2.2) saturate(0.55) contrast(1.05);
-  image-rendering: -webkit-optimize-contrast;
+  /* Convert the transparent taupe PNG into a crisp warm cream that
+     stays sharp on the dark footer. brightness(0) flattens the alpha
+     mask, invert(0.96) produces a near-white, sepia + saturate add
+     a subtle warmth so it doesn't read as clinical white. */
+  filter:
+    brightness(0)
+    invert(0.96)
+    sepia(0.18)
+    saturate(1.8)
+    hue-rotate(-2deg);
 }
 .footer-tag {
   font-family: var(--f-display);
@@ -1600,7 +1604,7 @@ body.is-menu-open .wa-fab {
   /* ----- FOOTER ----- */
   .footer { padding: 64px 0 28px; }
   .footer-inner { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; text-align: left; }
-  .footer-logo { height: 48px; }
+  .footer-logo { height: 50px; }
   .footer-logo-wrap { margin-bottom: 22px; }
   .footer-tag { font-size: 16px; max-width: 100%; }
   .footer-col h5 { margin-bottom: 16px; }
