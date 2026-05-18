@@ -19,8 +19,8 @@
       'nav.cta': 'записаться',
 
       'hero.eyebrow': 'бережная стоматология · астана',
-      'hero.title1': 'caring for your smile,',
-      'hero.title2': 'caring for you.',
+      'hero.title1': 'забота о вашей улыбке,',
+      'hero.title2': 'забота о вас.',
       'hero.subtitle': 'современная стоматология с тёплым человеческим подходом — там, где о вас заботятся, а не просто лечат.',
       'hero.cta1': 'Записаться на консультацию',
       'hero.cta2': 'Узнать больше',
@@ -219,8 +219,8 @@
       'nav.cta': 'жазылу',
 
       'hero.eyebrow': 'күтімді тіс емханасы · астана',
-      'hero.title1': 'күлкіңіздің қамқоршысы,',
-      'hero.title2': 'сіздің қамқоршыңыз.',
+      'hero.title1': 'сіздің күлкіңізге қамқорлық —',
+      'hero.title2': 'өзіңізге қамқорлық.',
       'hero.subtitle': 'заманауи стоматология жылы, адами көзқараспен — бұл жерде сізді жай емдемейді, сіз туралы қамқорлық жасайды.',
       'hero.cta1': 'Кеңеске жазылу',
       'hero.cta2': 'Толығырақ',
@@ -570,25 +570,56 @@
     });
   }
 
-  /* ---------------- HERO PARALLAX (subtle) ---------------- */
+  /* ---------------- HERO LOAD-IN (stagger fade + blur lift) ---------------- */
+  const heroEl = document.querySelector('.hero');
+  if (heroEl) {
+    if (reduce) {
+      heroEl.classList.add('is-loaded');
+    } else {
+      // Fire on next frame so the initial state is painted before transitions kick in
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => heroEl.classList.add('is-loaded'));
+      });
+    }
+  }
+
+  /* ---------------- HERO SHAPE PARALLAX (gentle mouse follow) ---------------- */
   if (!reduce && window.matchMedia('(hover: hover)').matches) {
-    const heroCard = document.querySelector('.hero-card');
-    const hero = document.querySelector('.hero');
-    if (heroCard && hero) {
+    const heroShape = document.querySelector('.hero-shape');
+    if (heroShape && heroEl) {
       let raf = null;
-      hero.addEventListener('mousemove', (e) => {
+      heroEl.addEventListener('mousemove', (e) => {
         if (raf) return;
         raf = requestAnimationFrame(() => {
-          const rect = hero.getBoundingClientRect();
+          const rect = heroEl.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width - 0.5;
           const y = (e.clientY - rect.top) / rect.height - 0.5;
-          heroCard.style.transform = `translate3d(${x * -10}px, ${y * -10}px, 0) rotate(${x * 0.6}deg)`;
+          heroShape.style.translate = `${x * -18}px ${y * -14}px`;
           raf = null;
         });
       });
-      hero.addEventListener('mouseleave', () => {
-        heroCard.style.transform = '';
+      heroEl.addEventListener('mouseleave', () => {
+        heroShape.style.translate = '';
       });
+    }
+  }
+
+  /* ---------------- HERO SCROLL PARALLAX (subtle on slogan + lede) ---------------- */
+  if (!reduce) {
+    const slogan = document.querySelector('.hero-slogan');
+    const lede = document.querySelector('.hero-lede');
+    if (slogan) {
+      let raf = null;
+      const onScroll = () => {
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          const y = Math.min(window.scrollY, 500);
+          slogan.style.translate = `0 ${y * 0.06}px`;
+          if (lede) lede.style.translate = `0 ${y * 0.04}px`;
+          raf = null;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
     }
   }
 
