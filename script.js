@@ -44,18 +44,53 @@
       'services.eyebrow': 'Услуги',
       'services.title': 'Полный спектр стоматологической помощи',
       'services.sub': 'От профилактики до сложной имплантологии — в одном пространстве, под наблюдением профильных специалистов.',
-      's.therapy.t': 'Терапия',
+      's.therapy.t': 'терапия',
       's.therapy.d': 'Лечение дёсен и кариеса любой сложности с использованием микроскопа.',
-      's.aesth.t': 'Эстетические реставрации',
+      's.therapy.t1': 'лечение кариеса',
+      's.therapy.t2': 'лечение дёсен',
+      's.therapy.t3': 'микроскопическая терапия',
+      's.aesth.t': 'эстетические реставрации',
       's.aesth.d': 'Композитные реставрации, виниры и люминиры — естественная белизна и форма.',
-      's.surg.t': 'Хирургия и имплантология',
+      's.aesth.t1': 'композитные реставрации',
+      's.aesth.t2': 'виниры',
+      's.aesth.t3': 'люминиры',
+      's.surg.t': 'хирургия и имплантология',
       's.surg.d': 'Удаление зубов, имплантация, лечение рецессии дёсен, пластика уздечки.',
-      's.endo.t': 'Эндодонтия',
+      's.surg.t1': 'имплантация',
+      's.surg.t2': 'удаление зубов',
+      's.surg.t3': 'пластика уздечки',
+      's.surg.t4': 'лечение рецессии дёсен',
+      's.endo.t': 'эндодонтия',
       's.endo.d': 'Лечение каналов, терапия пульпы, сохранение собственного зуба.',
-      's.ortho.t': 'Ортопедия',
+      's.endo.t1': 'лечение каналов',
+      's.endo.t2': 'терапия пульпы',
+      's.endo.t3': 'сохранение зуба',
+      's.ortho.t': 'ортопедия',
       's.ortho.d': 'Коронки, виниры, вкладки, мостовидные протезы — индивидуальная работа.',
-      's.hyg.t': 'Гигиена и профилактика',
+      's.ortho.t1': 'коронки',
+      's.ortho.t2': 'вкладки',
+      's.ortho.t3': 'мостовидные протезы',
+      's.hyg.t': 'гигиена и профилактика',
       's.hyg.d': 'Профессиональная чистка, отбеливание — кабинетное, домашнее, лазерное.',
+      's.hyg.t1': 'профессиональная чистка',
+      's.hyg.t2': 'отбеливание',
+      's.hyg.t3': 'фторирование',
+
+      'cta.title': 'консультация по телефону',
+      'cta.sub': 'оставьте номер — мы перезвоним и ответим на все вопросы.',
+      'cta.fname': 'имя и фамилия',
+      'cta.fphone': 'телефон',
+      'cta.btn': 'отправить',
+      'cta.note': 'нажимая «отправить», вы соглашаетесь с обработкой персональных данных.',
+      'cta.success': 'спасибо! мы свяжемся с вами в ближайшее время.',
+
+      'map.eyebrow': 'мы находимся',
+      'map.addr': 'астана, ул. аскара токпанова 8/5',
+      'map.link': 'построить маршрут →',
+      'map.h1': 'часы приёма',
+      'map.hrs1': 'пн–пт 10:00–21:00',
+      'map.hrs2': 'сб–вс 10:00–16:00',
+      'map.h2': 'телефон',
 
       'team.eyebrow': 'Команда',
       'team.title': 'Врачи, которым доверяют',
@@ -209,18 +244,53 @@
       'services.eyebrow': 'Қызметтер',
       'services.title': 'Стоматологиялық көмектің толық спектрі',
       'services.sub': 'Алдын алудан күрделі имплантологияға дейін — бір кеңістікте, мамандар бақылауында.',
-      's.therapy.t': 'Терапия',
+      's.therapy.t': 'терапия',
       's.therapy.d': 'Кез келген күрделіліктегі қызыл иек пен тіс жегісін микроскоппен емдеу.',
-      's.aesth.t': 'Эстетикалық реставрациялар',
+      's.therapy.t1': 'тіс жегісін емдеу',
+      's.therapy.t2': 'қызыл иек емдеу',
+      's.therapy.t3': 'микроскопиялық терапия',
+      's.aesth.t': 'эстетикалық реставрациялар',
       's.aesth.d': 'Композиттік реставрациялар, винирлер және люминирлер — табиғи аппақтық пен пішін.',
-      's.surg.t': 'Хирургия және имплантология',
+      's.aesth.t1': 'композиттік реставрациялар',
+      's.aesth.t2': 'винирлер',
+      's.aesth.t3': 'люминирлер',
+      's.surg.t': 'хирургия және имплантология',
       's.surg.d': 'Тісті жұлу, имплантация, қызыл иек рецессиясын емдеу, ауыз тұтқырлығын түзету.',
-      's.endo.t': 'Эндодонтия',
+      's.surg.t1': 'имплантация',
+      's.surg.t2': 'тісті жұлу',
+      's.surg.t3': 'тұтқыр пластикасы',
+      's.surg.t4': 'қызыл иек рецессиясын емдеу',
+      's.endo.t': 'эндодонтия',
       's.endo.d': 'Тіс түбі арналарын емдеу, пульпа терапиясы, өз тісіңізді сақтау.',
-      's.ortho.t': 'Ортопедия',
+      's.endo.t1': 'тіс түбі арналарын емдеу',
+      's.endo.t2': 'пульпа терапиясы',
+      's.endo.t3': 'тісті сақтау',
+      's.ortho.t': 'ортопедия',
       's.ortho.d': 'Коронкалар, винирлер, кірмелер, көпір протездер — жеке жұмыс.',
-      's.hyg.t': 'Гигиена және алдын алу',
+      's.ortho.t1': 'коронкалар',
+      's.ortho.t2': 'кірмелер',
+      's.ortho.t3': 'көпір протездер',
+      's.hyg.t': 'гигиена және алдын алу',
       's.hyg.d': 'Кәсіби тазалау, ағарту — кабинеттік, үйде, лазерлік.',
+      's.hyg.t1': 'кәсіби тазалау',
+      's.hyg.t2': 'ағарту',
+      's.hyg.t3': 'фторлау',
+
+      'cta.title': 'телефон арқылы кеңес',
+      'cta.sub': 'нөміріңізді қалдырыңыз — біз қайта қоңырау шалып, барлық сұрақтарға жауап береміз.',
+      'cta.fname': 'аты-жөні',
+      'cta.fphone': 'телефон',
+      'cta.btn': 'жіберу',
+      'cta.note': '«жіберу» түймесін басу арқылы сіз дербес деректерді өңдеуге келісім бересіз.',
+      'cta.success': 'рахмет! біз сізбен жақын арада хабарласамыз.',
+
+      'map.eyebrow': 'біз орналасқан жер',
+      'map.addr': 'астана, асқар тоқпанов көшесі 8/5',
+      'map.link': 'жол бойынша өту →',
+      'map.h1': 'қабылдау сағаттары',
+      'map.hrs1': 'дс–жм 10:00–21:00',
+      'map.hrs2': 'сб–жс 10:00–16:00',
+      'map.h2': 'телефон',
 
       'team.eyebrow': 'Команда',
       'team.title': 'Сенім артатын дәрігерлер',
@@ -521,6 +591,62 @@
       });
     }
   }
+
+  /* ---------------- SERVICES ACCORDION (only one open at a time) ---------------- */
+  document.querySelectorAll('.service-row').forEach(row => {
+    row.addEventListener('toggle', () => {
+      if (row.open) {
+        document.querySelectorAll('.service-row[open]').forEach(other => {
+          if (other !== row) other.open = false;
+        });
+      }
+    });
+  });
+
+  /* ---------------- CONSULTATION FORM (no backend → WhatsApp deeplink) ---------------- */
+  const ctaForm = document.querySelector('.cta-form');
+  if (ctaForm) {
+    ctaForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(ctaForm);
+      const name = (fd.get('name') || '').toString().trim();
+      const phone = (fd.get('phone') || '').toString().trim();
+      if (!name || !phone) {
+        ctaForm.querySelectorAll('input').forEach(inp => {
+          if (!inp.value.trim()) {
+            inp.style.borderColor = '#E08585';
+            setTimeout(() => { inp.style.borderColor = ''; }, 1600);
+          }
+        });
+        return;
+      }
+      const msg = encodeURIComponent(
+        `Здравствуйте! Меня зовут ${name}. Хочу записаться на консультацию. Мой номер: ${phone}`
+      );
+      window.open(`https://wa.me/77781703160?text=${msg}`, '_blank', 'noopener');
+      ctaForm.classList.add('is-submitted');
+    });
+  }
+
+  /* ---------------- I18N FOR INPUT PLACEHOLDERS ---------------- */
+  // Apply placeholder translations on lang change — extends the existing applyLang
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    // Re-run when language changes by observing lang-btn clicks
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        const key = el.getAttribute('data-i18n-placeholder');
+        const map = dict[lang];
+        if (map && map[key] !== undefined) el.setAttribute('placeholder', map[key]);
+      });
+    });
+    // Initial application
+    const initial = localStorage.getItem(STORAGE_KEY);
+    const lang = (initial && supported.includes(initial)) ? initial : 'ru';
+    const key = el.getAttribute('data-i18n-placeholder');
+    const map = dict[lang];
+    if (map && map[key] !== undefined) el.setAttribute('placeholder', map[key]);
+  });
 
   /* ---------------- BUTTON RIPPLE FEEDBACK ---------------- */
   document.querySelectorAll('.btn').forEach(btn => {

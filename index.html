@@ -164,63 +164,110 @@
     </div>
   </section>
 
-  <!-- ============ SERVICES ============ -->
+  <!-- ============ SERVICES (numbered accordion) ============ -->
   <section id="services" class="section section-services">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="services.eyebrow">Услуги</span>
-        <h2 class="h2" data-i18n="services.title">Полный спектр стоматологической помощи</h2>
-        <p class="section-sub" data-i18n="services.sub">От профилактики до сложной имплантологии — в одном пространстве, под наблюдением профильных специалистов.</p>
+      <div class="services-head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">услуги</span>
       </div>
 
-      <div class="services-grid">
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 6 C10 6 7 10 7 16 C7 22 10 28 13 28 C15 28 15 24 16 24 C17 24 17 28 19 28 C22 28 25 22 25 16 C25 10 22 6 16 6 Z"/></svg>
+      <div class="services-list">
+        <details class="service-row reveal" open>
+          <summary>
+            <span class="service-num">01.</span>
+            <span class="service-title" data-i18n="s.therapy.t">терапия</span>
+            <span class="service-arrow" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p class="service-desc" data-i18n="s.therapy.d">Лечение дёсен и кариеса любой сложности с использованием микроскопа.</p>
+            <div class="service-tags">
+              <span data-i18n="s.therapy.t1">лечение кариеса</span>
+              <span data-i18n="s.therapy.t2">лечение дёсен</span>
+              <span data-i18n="s.therapy.t3">микроскопическая терапия</span>
+            </div>
           </div>
-          <h3 data-i18n="s.therapy.t">Терапия</h3>
-          <p data-i18n="s.therapy.d">Лечение дёсен и кариеса любой сложности с использованием микроскопа.</p>
-        </article>
+        </details>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16 L11 10 L21 20 L27 14"/><circle cx="5" cy="16" r="2"/><circle cx="27" cy="14" r="2"/></svg>
+        <details class="service-row reveal">
+          <summary>
+            <span class="service-num">02.</span>
+            <span class="service-title" data-i18n="s.aesth.t">эстетические реставрации</span>
+            <span class="service-arrow" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p class="service-desc" data-i18n="s.aesth.d">Композитные реставрации, виниры и люминиры — естественная белизна и форма.</p>
+            <div class="service-tags">
+              <span data-i18n="s.aesth.t1">композитные реставрации</span>
+              <span data-i18n="s.aesth.t2">виниры</span>
+              <span data-i18n="s.aesth.t3">люминиры</span>
+            </div>
           </div>
-          <h3 data-i18n="s.aesth.t">Эстетические реставрации</h3>
-          <p data-i18n="s.aesth.d">Композитные реставрации, виниры и люминиры — естественная белизна и форма.</p>
-        </article>
+        </details>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="12" height="14" rx="2"/><path d="M16 20 L16 26 M12 26 L20 26"/></svg>
+        <details class="service-row reveal">
+          <summary>
+            <span class="service-num">03.</span>
+            <span class="service-title" data-i18n="s.surg.t">хирургия и имплантология</span>
+            <span class="service-arrow" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p class="service-desc" data-i18n="s.surg.d">Удаление зубов, имплантация, лечение рецессии дёсен, пластика уздечки.</p>
+            <div class="service-tags">
+              <span data-i18n="s.surg.t1">имплантация</span>
+              <span data-i18n="s.surg.t2">удаление зубов</span>
+              <span data-i18n="s.surg.t3">пластика уздечки</span>
+              <span data-i18n="s.surg.t4">лечение рецессии дёсен</span>
+            </div>
           </div>
-          <h3 data-i18n="s.surg.t">Хирургия и имплантология</h3>
-          <p data-i18n="s.surg.d">Удаление зубов, имплантация, лечение рецессии дёсен, пластика уздечки.</p>
-        </article>
+        </details>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 L16 22 M12 8 L16 4 L20 8 M10 22 C10 26 13 28 16 28 C19 28 22 26 22 22"/></svg>
+        <details class="service-row reveal">
+          <summary>
+            <span class="service-num">04.</span>
+            <span class="service-title" data-i18n="s.endo.t">эндодонтия</span>
+            <span class="service-arrow" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p class="service-desc" data-i18n="s.endo.d">Лечение каналов, терапия пульпы, сохранение собственного зуба.</p>
+            <div class="service-tags">
+              <span data-i18n="s.endo.t1">лечение каналов</span>
+              <span data-i18n="s.endo.t2">терапия пульпы</span>
+              <span data-i18n="s.endo.t3">сохранение зуба</span>
+            </div>
           </div>
-          <h3 data-i18n="s.endo.t">Эндодонтия</h3>
-          <p data-i18n="s.endo.d">Лечение каналов, терапия пульпы, сохранение собственного зуба.</p>
-        </article>
+        </details>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="20" height="14" rx="2"/><path d="M10 10 L10 6 M22 10 L22 6 M6 16 L26 16"/></svg>
+        <details class="service-row reveal">
+          <summary>
+            <span class="service-num">05.</span>
+            <span class="service-title" data-i18n="s.ortho.t">ортопедия</span>
+            <span class="service-arrow" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p class="service-desc" data-i18n="s.ortho.d">Коронки, виниры, вкладки, мостовидные протезы — индивидуальная работа.</p>
+            <div class="service-tags">
+              <span data-i18n="s.ortho.t1">коронки</span>
+              <span data-i18n="s.ortho.t2">вкладки</span>
+              <span data-i18n="s.ortho.t3">мостовидные протезы</span>
+            </div>
           </div>
-          <h3 data-i18n="s.ortho.t">Ортопедия</h3>
-          <p data-i18n="s.ortho.d">Коронки, виниры, вкладки, мостовидные протезы — индивидуальная работа.</p>
-        </article>
+        </details>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 C20 10 24 14 24 20 C24 24 20 28 16 28 C12 28 8 24 8 20 C8 14 12 10 16 4 Z"/></svg>
+        <details class="service-row reveal">
+          <summary>
+            <span class="service-num">06.</span>
+            <span class="service-title" data-i18n="s.hyg.t">гигиена и профилактика</span>
+            <span class="service-arrow" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p class="service-desc" data-i18n="s.hyg.d">Профессиональная чистка, отбеливание — кабинетное, домашнее, лазерное.</p>
+            <div class="service-tags">
+              <span data-i18n="s.hyg.t1">профессиональная чистка</span>
+              <span data-i18n="s.hyg.t2">отбеливание</span>
+              <span data-i18n="s.hyg.t3">фторирование</span>
+            </div>
           </div>
-          <h3 data-i18n="s.hyg.t">Гигиена и профилактика</h3>
-          <p data-i18n="s.hyg.d">Профессиональная чистка, отбеливание — кабинетное, домашнее, лазерное.</p>
-        </article>
+        </details>
       </div>
     </div>
   </section>
@@ -603,6 +650,62 @@
           <p data-i18n="steril.d3">Дезинфекция, ультразвук, автоклавирование — для каждого инструмента.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ CONSULTATION CTA ============ -->
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-copy">
+          <h2 class="cta-title" data-i18n="cta.title">консультация по телефону</h2>
+          <p class="cta-sub" data-i18n="cta.sub">оставьте номер — мы перезвоним и ответим на все вопросы.</p>
+        </div>
+        <form class="cta-form" novalidate>
+          <label class="cta-field">
+            <input type="text" name="name" required autocomplete="name" data-i18n-placeholder="cta.fname" placeholder="имя и фамилия" />
+          </label>
+          <label class="cta-field">
+            <input type="tel" name="phone" required autocomplete="tel" data-i18n-placeholder="cta.fphone" placeholder="телефон" />
+          </label>
+          <button type="submit" class="btn btn-primary cta-submit">
+            <span data-i18n="cta.btn">отправить</span>
+          </button>
+          <p class="cta-note" data-i18n="cta.note">нажимая «отправить», вы соглашаетесь с обработкой персональных данных.</p>
+          <p class="cta-success" data-i18n="cta.success">спасибо! мы свяжемся с вами в ближайшее время.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAP ============ -->
+  <section class="section-map">
+    <div class="container map-head">
+      <div class="map-addr">
+        <span class="eyebrow" data-i18n="map.eyebrow">мы находимся</span>
+        <p class="map-line" data-i18n="map.addr">астана, ул. аскара токпанова 8/5</p>
+        <a href="https://2gis.kz/astana/firm/70000001102011303" target="_blank" rel="noopener" class="map-link" data-i18n="map.link">построить маршрут →</a>
+      </div>
+      <div class="map-meta">
+        <div>
+          <div class="map-meta-label" data-i18n="map.h1">часы приёма</div>
+          <div class="map-meta-val" data-i18n="map.hrs1">пн–пт 10:00–21:00</div>
+          <div class="map-meta-val" data-i18n="map.hrs2">сб–вс 10:00–16:00</div>
+        </div>
+        <div>
+          <div class="map-meta-label" data-i18n="map.h2">телефон</div>
+          <a href="https://wa.me/77781703160" target="_blank" rel="noopener" class="map-meta-val map-meta-link">+7 778 170 3160</a>
+        </div>
+      </div>
+    </div>
+    <div class="map-frame">
+      <iframe
+        title="LR Clinic — Astana"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=71.4250%2C51.1340%2C71.4500%2C51.1480&amp;layer=mapnik&amp;marker=51.141000%2C71.437500"
+        allowfullscreen
+      ></iframe>
     </div>
   </section>
 
