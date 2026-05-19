@@ -609,6 +609,62 @@
     }
   }
 
+  /* ---------------- GALLERY CAROUSEL (snap-scroll + arrows + counter) ---------------- */
+  const galleryTrack = document.getElementById('galleryTrack');
+  const galleryNow = document.getElementById('galleryNow');
+  const galleryPrev = document.querySelector('.gallery-arrow[data-dir="prev"]');
+  const galleryNext = document.querySelector('.gallery-arrow[data-dir="next"]');
+
+  if (galleryTrack && galleryNow && galleryPrev && galleryNext) {
+    const cards = galleryTrack.querySelectorAll('.gallery-card');
+
+    const updateGallery = () => {
+      const trackRect = galleryTrack.getBoundingClientRect();
+      const trackCenter = trackRect.left + trackRect.width / 2;
+      let nearestIdx = 0;
+      let minDist = Infinity;
+      cards.forEach((c, i) => {
+        const r = c.getBoundingClientRect();
+        const cc = r.left + r.width / 2;
+        const d = Math.abs(cc - trackCenter);
+        if (d < minDist) { minDist = d; nearestIdx = i; }
+      });
+      galleryNow.textContent = String(nearestIdx + 1).padStart(2, '0');
+
+      const maxScroll = galleryTrack.scrollWidth - galleryTrack.clientWidth;
+      galleryPrev.disabled = galleryTrack.scrollLeft <= 2;
+      galleryNext.disabled = galleryTrack.scrollLeft >= maxScroll - 2;
+    };
+
+    const scrollByCard = (dir) => {
+      const card = cards[0];
+      if (!card) return;
+      const cardWidth = card.getBoundingClientRect().width;
+      const gap = 20;
+      galleryTrack.scrollBy({ left: (cardWidth + gap) * dir, behavior: reduce ? 'auto' : 'smooth' });
+    };
+
+    galleryPrev.addEventListener('click', () => scrollByCard(-1));
+    galleryNext.addEventListener('click', () => scrollByCard(1));
+
+    galleryTrack.addEventListener('scroll', () => {
+      if (galleryTrack._raf) return;
+      galleryTrack._raf = requestAnimationFrame(() => {
+        updateGallery();
+        galleryTrack._raf = null;
+      });
+    }, { passive: true });
+
+    // Keyboard nav when track is focused
+    galleryTrack.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); scrollByCard(1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); scrollByCard(-1); }
+    });
+
+    window.addEventListener('resize', updateGallery);
+    updateGallery();
+  }
+
   /* ---------------- SERVICES ACCORDION (only one open at a time) ---------------- */
   document.querySelectorAll('.service-row').forEach(row => {
     row.addEventListener('toggle', () => {

@@ -244,8 +244,9 @@
         <p class="section-sub" data-i18n="gallery.sub">реальные результаты — без ретуши, без фильтров.</p>
       </div>
 
-      <div class="gallery-grid">
-        <article class="gallery-card reveal">
+      <div class="gallery-wrap reveal">
+      <div class="gallery-grid" id="galleryTrack" tabindex="0" aria-label="Галерея работ">
+        <article class="gallery-card">
           <div class="gallery-pair">
             <figure class="gallery-img">
               <span class="gallery-tag" data-i18n="gallery.before">до</span>
@@ -265,7 +266,7 @@
           </div>
         </article>
 
-        <article class="gallery-card reveal">
+        <article class="gallery-card">
           <div class="gallery-pair">
             <figure class="gallery-img">
               <span class="gallery-tag" data-i18n="gallery.before">до</span>
@@ -285,7 +286,7 @@
           </div>
         </article>
 
-        <article class="gallery-card reveal">
+        <article class="gallery-card">
           <div class="gallery-pair">
             <figure class="gallery-img">
               <span class="gallery-tag" data-i18n="gallery.before">до</span>
@@ -305,7 +306,7 @@
           </div>
         </article>
 
-        <article class="gallery-card reveal">
+        <article class="gallery-card">
           <div class="gallery-pair">
             <figure class="gallery-img">
               <span class="gallery-tag" data-i18n="gallery.before">до</span>
@@ -324,6 +325,23 @@
             </div>
           </div>
         </article>
+      </div>
+
+      <div class="gallery-nav">
+        <span class="gallery-counter" aria-live="polite">
+          <span class="gallery-counter-now" id="galleryNow">01</span>
+          <span class="gallery-counter-sep">/</span>
+          <span class="gallery-counter-total">04</span>
+        </span>
+        <div class="gallery-arrows">
+          <button type="button" class="gallery-arrow" data-dir="prev" aria-label="Предыдущее" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6 L9 12 L15 18"/></svg>
+          </button>
+          <button type="button" class="gallery-arrow" data-dir="next" aria-label="Следующее">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 L15 12 L9 18"/></svg>
+          </button>
+        </div>
+      </div>
       </div>
     </div>
   </section>
