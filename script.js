@@ -109,7 +109,6 @@
 
       'gallery.eyebrow': 'до — после',
       'gallery.title': 'примеры наших работ',
-      'gallery.sub': 'реальные результаты — без ретуши, без фильтров.',
       'gallery.before': 'до',
       'gallery.after': 'после',
       'gallery.v.name': 'виниры',
@@ -124,6 +123,8 @@
       'gallery.cl.note': 'профессиональная гигиена — налёт, камень, потемнение эмали.',
       'gallery.g.name': 'закрытие щели',
       'gallery.g.note': 'художественная реставрация диастемы — без обточки и виниров.',
+      'gallery.ft.name': 'восстановление переднего зуба',
+      'gallery.ft.note': 'скол или травма переднего зуба — невидимая композитная реставрация.',
 
       'careers.eyebrow': 'присоединяйтесь',
       'careers.title': 'карьера и сотрудничество',
@@ -336,7 +337,6 @@
 
       'gallery.eyebrow': 'дейін — кейін',
       'gallery.title': 'жұмыстарымыздың үлгілері',
-      'gallery.sub': 'нақты нәтижелер — ретушсіз, фильтрсіз.',
       'gallery.before': 'дейін',
       'gallery.after': 'кейін',
       'gallery.v.name': 'винирлер',
@@ -351,6 +351,8 @@
       'gallery.cl.note': 'кәсіби гигиена — қақ, тас, эмаль қараюы.',
       'gallery.g.name': 'тістер арасындағы саңылауды жабу',
       'gallery.g.note': 'диастеманы көркем реставрациялау — тісті жонусыз, винирсіз.',
+      'gallery.ft.name': 'алдыңғы тісті қалпына келтіру',
+      'gallery.ft.note': 'алдыңғы тістің сынуы немесе зақымдалуы — көзге көрінбейтін композиттік реставрация.',
 
       'careers.eyebrow': 'бізге қосылыңыз',
       'careers.title': 'карьера және серіктестік',
@@ -533,7 +535,6 @@
 
       'gallery.eyebrow': 'before — after',
       'gallery.title': 'our work in detail',
-      'gallery.sub': 'real results — unretouched, unfiltered.',
       'gallery.before': 'before',
       'gallery.after': 'after',
       'gallery.v.name': 'veneers',
@@ -548,6 +549,8 @@
       'gallery.cl.note': 'plaque, calculus, and stained enamel — fully removed.',
       'gallery.g.name': 'closing a diastema',
       'gallery.g.note': 'artistic restoration of a tooth gap — no prep, no veneers.',
+      'gallery.ft.name': 'front tooth restoration',
+      'gallery.ft.note': 'chip or trauma to a front tooth — invisible composite restoration.',
 
       'team.eyebrow': 'team',
       'team.title': 'doctors you can trust',
