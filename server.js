@@ -56,5 +56,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`LR Clinic dev server → http://localhost:${PORT}`);
+  console.log(`LR clinic dev server → http://localhost:${PORT}`);
 });

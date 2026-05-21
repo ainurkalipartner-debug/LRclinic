@@ -1,5 +1,5 @@
 /* ===============================================================
-   LR Clinic — Premium dental clinic site
+   LR clinic — Premium dental clinic site
    Design: Apple-level minimalism × Swiss × medical trust
    Palette: warm cream, soft taupe (matches logo), muted slate-blue
    =============================================================== */
@@ -81,6 +81,13 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+/* ----- Brand wordmark "LR clinic" — locks the casing against text-transform: lowercase ancestors ----- */
+.brand {
+  text-transform: none;
+  letter-spacing: -0.012em;
+  white-space: nowrap;
 }
 
 /* =========== TYPE SCALE — Helvetica Now (Swiss precision) =========== */

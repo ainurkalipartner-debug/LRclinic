@@ -1,6 +1,6 @@
-# LR Clinic — Website
+# LR clinic — Website
 
-Premium bilingual (RU / KZ) website for LR Clinic — Dentistry & Aligners (Astana).
+Premium bilingual (RU / KZ) website for LR clinic — Dentistry & Aligners (Astana).
 
 ## Run locally
 
@@ -30,7 +30,7 @@ website/
 ├─ styles.css        # premium minimal styling
 ├─ script.js         # i18n (RU/KZ), reveal animations, nav, FAQ
 └─ assets/
-   └─ logo.png       # LR Clinic logo
+   └─ logo.png       # LR clinic logo
 ```
 
 ## Editing copy

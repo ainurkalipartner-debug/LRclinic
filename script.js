@@ -1,5 +1,5 @@
 /* =====================================================
-   LR Clinic — interactions, i18n, animations
+   LR clinic — interactions, i18n, animations
    ===================================================== */
 
 (() => {
@@ -8,7 +8,7 @@
   /* ---------------- TRANSLATIONS ---------------- */
   const dict = {
     ru: {
-      'meta.description': 'LR Clinic — стоматология и элайнеры в Астане. Премиальный уход, современные технологии, опытные врачи.',
+      'meta.description': 'LR clinic — стоматология и элайнеры в Астане. Премиальный уход, современные технологии, опытные врачи.',
 
       'nav.about': 'о клинике',
       'nav.services': 'услуги',
@@ -35,7 +35,7 @@
       'about.eyebrow': 'О клинике',
       'about.title': 'Мы не просто лечим зубы — мы улучшаем качество жизни.',
       'about.p1': 'Наша команда сочетает клиническую экспертизу, современные технологии и высокие стандарты заботы в каждой детали приёма.',
-      'about.p2': 'Мы создали LR Clinic для тех, кто ценит точность, спокойствие и долгосрочный результат — где медицинская строгость встречается с тёплым человеческим подходом.',
+      'about.p2': 'Мы создали LR clinic для тех, кто ценит точность, спокойствие и долгосрочный результат — где медицинская строгость встречается с тёплым человеческим подходом.',
       'about.v1t': 'Точность',
       'about.v1d': 'Цифровая диагностика и предсказуемые протоколы лечения.',
       'about.v2t': 'Спокойствие',
@@ -96,10 +96,10 @@
 
       'team.eyebrow': 'Команда',
       'team.title': 'Врачи, которым доверяют',
-      'team.sub': 'Каждый специалист LR Clinic — это многолетняя практика, постоянное обучение и любовь к делу.',
+      'team.sub': 'Каждый специалист LR clinic — это многолетняя практика, постоянное обучение и любовь к делу.',
       'team.m1.name': 'Усманова Лаура Роллановна',
       'team.m1.role': 'Главный врач',
-      'team.m1.bio': 'Руководит клинической работой и стандартами качества LR Clinic.',
+      'team.m1.bio': 'Руководит клинической работой и стандартами качества LR clinic.',
       'team.m2.name': 'Каржас Айжан Аслановна',
       'team.m2.role': 'Хирург · Ортопед · Имплантолог',
       'team.m2.bio': 'Имплантация, протезирование и сложные хирургические случаи.',
@@ -174,7 +174,7 @@
       'trust.p2d': 'Минимально-инвазивные подходы и работа под микроскопом.',
       'trust.p3t': 'Опытные врачи',
       'trust.p3d': 'Команда, которая объясняет каждый шаг лечения.',
-      'trust.msg': 'В LR Clinic мы обеспечиваем спокойствие и комфорт.',
+      'trust.msg': 'В <span class="brand">LR clinic</span> мы обеспечиваем спокойствие и комфорт.',
 
       'edu.eyebrow1': 'Почему важен рентген',
       'edu.title1': 'Снимок — это диагноз, а не формальность',
@@ -211,7 +211,7 @@
       'faq.a4': 'Чтобы увидеть скрытые поражения, оценить корни и костную ткань. Без снимка диагноз будет неполным.',
 
       'family.eyebrow': 'Семейная стоматология',
-      'family.title': 'Семьи выбирают LR Clinic',
+      'family.title': 'Семьи выбирают <span class="brand">LR clinic</span>',
       'family.p': 'Потому что мы делаем акцент на профилактике — а не только на лечении. Это значит меньше визитов «по боли» и больше уверенности в здоровье ваших близких.',
       'family.cta': 'Записаться семьёй',
 
@@ -236,7 +236,7 @@
     },
 
     kz: {
-      'meta.description': 'LR Clinic — Астанадағы стоматология және элайнерлер. Премиум күтім, заманауи технологиялар, тәжірибелі дәрігерлер.',
+      'meta.description': 'LR clinic — Астанадағы стоматология және элайнерлер. Премиум күтім, заманауи технологиялар, тәжірибелі дәрігерлер.',
 
       'nav.about': 'клиника туралы',
       'nav.services': 'қызметтер',
@@ -263,7 +263,7 @@
       'about.eyebrow': 'Клиника туралы',
       'about.title': 'Біз жай ғана тіс емдемейміз — біз өмір сапасын жақсартамыз.',
       'about.p1': 'Біздің команда клиникалық тәжірибені, заманауи технологияларды және күтімнің жоғары стандарттарын әр бөлшекте біріктіреді.',
-      'about.p2': 'LR Clinic-ті дәлдікті, тыныштықты және ұзақ мерзімді нәтижені бағалайтындар үшін жасадық — медициналық қаталдық жылы адамдық көзқараспен ұштасады.',
+      'about.p2': 'LR clinic-ті дәлдікті, тыныштықты және ұзақ мерзімді нәтижені бағалайтындар үшін жасадық — медициналық қаталдық жылы адамдық көзқараспен ұштасады.',
       'about.v1t': 'Дәлдік',
       'about.v1d': 'Цифрлық диагностика және болжамды емдеу хаттамалары.',
       'about.v2t': 'Тыныштық',
@@ -324,10 +324,10 @@
 
       'team.eyebrow': 'Команда',
       'team.title': 'Сенім артатын дәрігерлер',
-      'team.sub': 'LR Clinic-тің әр маманы — ұзақ жылдық тәжірибе, үздіксіз оқу және ісіне деген сүйіспеншілік.',
+      'team.sub': 'LR clinic-тің әр маманы — ұзақ жылдық тәжірибе, үздіксіз оқу және ісіне деген сүйіспеншілік.',
       'team.m1.name': 'Усманова Лаура Роллановна',
       'team.m1.role': 'Бас дәрігер',
-      'team.m1.bio': 'LR Clinic-тің клиникалық жұмысы мен сапа стандарттарын басқарады.',
+      'team.m1.bio': 'LR clinic-тің клиникалық жұмысы мен сапа стандарттарын басқарады.',
       'team.m2.name': 'Қаржас Айжан Аслановна',
       'team.m2.role': 'Хирург · Ортопед · Имплантолог',
       'team.m2.bio': 'Имплантация, протездеу және күрделі хирургиялық жағдайлар.',
@@ -402,7 +402,7 @@
       'trust.p2d': 'Минималды-инвазивті тәсілдер мен микроскоппен жұмыс.',
       'trust.p3t': 'Тәжірибелі дәрігерлер',
       'trust.p3d': 'Емдеудің әр қадамын түсіндіретін команда.',
-      'trust.msg': 'LR Clinic-те біз тыныштық пен жайлылықты қамтамасыз етеміз.',
+      'trust.msg': '<span class="brand">LR clinic</span>-те біз тыныштық пен жайлылықты қамтамасыз етеміз.',
 
       'edu.eyebrow1': 'Рентген неге маңызды',
       'edu.title1': 'Сурет — бұл диагноз, формалдылық емес',
@@ -439,7 +439,7 @@
       'faq.a4': 'Жасырын зақымдарды көру, тамырлар мен сүйек тінін бағалау үшін. Суретсіз диагноз толық болмайды.',
 
       'family.eyebrow': 'Отбасылық стоматология',
-      'family.title': 'Отбасылар LR Clinic-ті таңдайды',
+      'family.title': 'Отбасылар <span class="brand">LR clinic</span>-ті таңдайды',
       'family.p': 'Себебі біз тек емдеуге емес, алдын алуға басты назар аударамыз. Бұл «ауырғаннан кейінгі» сапарлардың азаюы және жақындарыңыздың денсаулығына көбірек сенімділік дегенді білдіреді.',
       'family.cta': 'Отбасымен жазылу',
 
@@ -464,7 +464,7 @@
     },
 
     en: {
-      'meta.description': 'LR Clinic — gentle dentistry and aligners in Astana. Premium care, modern technology, experienced doctors.',
+      'meta.description': 'LR clinic — gentle dentistry and aligners in Astana. Premium care, modern technology, experienced doctors.',
 
       'nav.about': 'about',
       'nav.services': 'services',
@@ -490,7 +490,7 @@
       'about.eyebrow': 'about the clinic',
       'about.title': "we don't just treat teeth — we improve quality of life.",
       'about.p1': 'our team combines clinical expertise, modern technology, and the highest standards of care in every detail.',
-      'about.p2': 'we created LR Clinic for people who value precision, calm, and lasting results — where medical rigor meets a warm human approach.',
+      'about.p2': 'we created LR clinic for people who value precision, calm, and lasting results — where medical rigor meets a warm human approach.',
       'about.v1t': 'precision',
       'about.v1d': 'digital diagnostics and predictable treatment protocols.',
       'about.v2t': 'calm',
@@ -554,10 +554,10 @@
 
       'team.eyebrow': 'team',
       'team.title': 'doctors you can trust',
-      'team.sub': 'every specialist at LR Clinic brings years of practice, continuous education, and care for their craft.',
+      'team.sub': 'every specialist at LR clinic brings years of practice, continuous education, and care for their craft.',
       'team.m1.name': 'Laura Usmanova',
       'team.m1.role': 'chief doctor',
-      'team.m1.bio': 'leads clinical work and quality standards at LR Clinic.',
+      'team.m1.bio': 'leads clinical work and quality standards at LR clinic.',
       'team.m2.name': 'Aizhan Karzhas',
       'team.m2.role': 'surgeon · orthopedist · implantologist',
       'team.m2.bio': 'implantology, prosthetics, and complex surgical cases.',
@@ -577,7 +577,7 @@
       'trust.p2d': 'minimally invasive approaches and microscope precision.',
       'trust.p3t': 'experienced doctors',
       'trust.p3d': 'a team that explains every step of the treatment.',
-      'trust.msg': 'at LR Clinic, calm and comfort are a given.',
+      'trust.msg': 'at <span class="brand">LR clinic</span>, calm and comfort are a given.',
 
       'reviews.eyebrow': 'patient reviews',
       'reviews.title': 'the words we hear most often',
@@ -637,7 +637,7 @@
       'faq.a4': 'to see hidden damage and assess roots and bone. without an x-ray, the diagnosis is incomplete.',
 
       'family.eyebrow': 'family dentistry',
-      'family.title': 'families choose LR Clinic',
+      'family.title': 'families choose <span class="brand">LR clinic</span>',
       'family.p': 'because we focus on prevention — not just treatment. fewer emergency visits, more confidence in the health of those you love.',
       'family.cta': 'book for the family',
 
@@ -715,7 +715,10 @@
       if (el.tagName === 'META') {
         el.setAttribute('content', map[key]);
       } else {
-        el.textContent = map[key];
+        // innerHTML so dict values can include the <span class="brand"> wrapper
+        // that locks "LR clinic" casing against text-transform: lowercase ancestors.
+        // Dict values are hardcoded by us, so this is not user-input.
+        el.innerHTML = map[key];
       }
     });
 
