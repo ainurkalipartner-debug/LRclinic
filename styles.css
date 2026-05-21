@@ -1294,20 +1294,39 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
   box-shadow: var(--sh-lg);
 }
 .steril-card:hover::after { opacity: 1; transform: translate(-20px, -20px); }
-.steril-num {
-  font-family: var(--f-display);
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1;
-  color: var(--taupe);
-  margin-bottom: 24px;
-  letter-spacing: -0.02em;
-  transition: color .4s var(--ease), transform .5s var(--ease);
+.steril-icon {
   position: relative;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--alabaster);
+  border: 1px solid var(--line);
+  color: var(--ash-deep);
+  margin-bottom: 26px;
+  transition:
+    background .45s var(--ease),
+    color .45s var(--ease),
+    border-color .45s var(--ease),
+    transform .55s var(--ease),
+    box-shadow .45s var(--ease);
 }
-.steril-card:hover .steril-num {
-  color: var(--taupe-dk);
+.steril-icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  transition: transform .6s var(--ease);
+}
+.steril-card:hover .steril-icon {
+  background: var(--ink);
+  color: var(--ash-soft);
+  border-color: var(--ink);
   transform: translateY(-2px);
+  box-shadow: 0 12px 28px -14px rgba(36, 36, 36, 0.30);
+}
+.steril-card:hover .steril-icon svg {
+  transform: scale(1.06) rotate(-3deg);
 }
 .steril-card h4 {
   font-family: var(--f-display);
@@ -2322,7 +2341,8 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
   /* ----- STERILIZATION ----- */
   .steril-grid { grid-template-columns: 1fr; gap: 14px; max-width: 100%; }
   .steril-card { padding: 32px 26px; border-radius: 20px; }
-  .steril-num { font-size: 48px; margin-bottom: 18px; }
+  .steril-icon { width: 56px; height: 56px; margin-bottom: 20px; border-radius: 16px; }
+  .steril-icon svg { width: 28px; height: 28px; }
   .steril-card h4 { font-size: 20px; }
   .steril-card p { font-size: 14px; }
 
@@ -2368,7 +2388,8 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
   .care-block { padding: 28px 22px; }
   .care-time { font-size: 24px; }
   .steril-card { padding: 28px 22px; }
-  .steril-num { font-size: 44px; }
+  .steril-icon { width: 52px; height: 52px; }
+  .steril-icon svg { width: 26px; height: 26px; }
   .edu-card { padding: 32px 22px; }
   .family-card { padding: 36px 22px; }
   .faq-item summary { padding: 18px 20px; font-size: 15.5px; }
@@ -2414,7 +2435,14 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
   .team-card:hover .team-photo img { transform: none; filter: none; }
   .team-card:hover h3 { color: var(--ink); }
   .steril-card:hover { background: var(--bg); border-color: var(--line); box-shadow: none; }
-  .steril-card:hover .steril-num { transform: none; color: var(--taupe); }
+  .steril-card:hover .steril-icon {
+    background: var(--alabaster);
+    color: var(--ash-deep);
+    border-color: var(--line);
+    transform: none;
+    box-shadow: none;
+  }
+  .steril-card:hover .steril-icon svg { transform: none; }
   .about-value:hover { padding-left: 0; }
   .about-value:hover .about-value-num { transform: none; color: var(--taupe); }
   .about-value:hover h4 { color: var(--ink); }
